@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MedAI — Modern Medical AI Platform</title>
+    <meta name="description" content="Deploy trustworthy medical AI for diagnostics, documentation, and patient engagement — HIPAA-ready and secure by design." />
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta property="og:title" content="MedAI — Modern Medical AI Platform" />
+    <meta property="og:description" content="Deploy trustworthy medical AI for diagnostics, documentation, and patient engagement — HIPAA-ready and secure by design." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/og-image.png" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      // Apply saved theme early to prevent flash
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme-preference');
+          var system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', saved || system);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="MedAI home">
+          <img class="brand-mark" src="/assets/logo.svg" alt="MedAI logo" width="28" height="28" />
+          <span class="brand-name">MedAI</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <button class="nav-toggle" id="nav-toggle" aria-controls="nav-links" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <ul id="nav-links" class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-ctas">
+          <button id="theme-toggle" class="button button-ghost" aria-pressed="false" aria-label="Toggle theme">
+            <span class="theme-toggle-label">Dark mode</span>
+          </button>
+          <a class="button button-primary" href="#contact">Request a demo</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Transforming healthcare with reliable AI</h1>
+            <p class="lead">Deploy trustworthy medical AI for diagnostics, clinical documentation, and patient engagement. HIPAA-ready, enterprise-secure, and built for outcomes.</p>
+            <div class="actions">
+              <a class="button button-primary" href="#contact">Request a demo</a>
+              <a class="button button-secondary" href="#features">Learn more</a>
+            </div>
+            <div class="trust">
+              <span class="badge">HIPAA-ready</span>
+              <span class="dot"></span>
+              <span class="badge">SOC 2</span>
+              <span class="dot"></span>
+              <span class="badge">On-prem or cloud</span>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card">
+              <div class="stat">
+                <div class="stat-label">Diagnostic support</div>
+                <div class="stat-value">+19% sensitivity</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Clinical documentation</div>
+                <div class="stat-value">-43% charting time</div>
+              </div>
+              <div class="stat">
+                <div class="stat-label">Triage automation</div>
+                <div class="stat-value">65% coverage</div>
+              </div>
+            </div>
+            <svg class="hero-blob" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg"><g transform="translate(300,300)"><path d="M120,-170.2C157.9,-144.5,190.3,-117.1,206.8,-83.2C223.4,-49.3,224.1,-8.9,214.7,29.2C205.4,67.3,185.8,103.3,158.9,133.9C132,164.6,97.7,189.9,59.1,202.5C20.4,215.1,-22.6,215,-63.1,202.5C-103.6,190.1,-141.6,165.3,-173.5,133.3C-205.3,101.3,-231,62.2,-236.1,20.1C-241.2,-21.9,-225.8,-66.9,-199.8,-104.6C-173.8,-142.4,-137.1,-173,-97.5,-197.8C-57.9,-222.7,-15.4,-241.8,19.4,-236.8C54.3,-231.9,81.5,-203.9,120,-170.2Z" fill="currentColor" opacity="0.08"/></g></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="logos">
+        <div class="container logos-inner">
+          <span class="logos-label">Backed by research and trusted by teams at</span>
+          <ul class="logo-list">
+            <li>City General</li>
+            <li>Northbridge Health</li>
+            <li>Mercury Clinic</li>
+            <li>Starlight Care</li>
+            <li>Atlas Labs</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2>Purpose-built features for clinical impact</h2>
+          <p class="section-lead">From intake to documentation to follow-up, streamline the care journey with AI that augments clinicians — not replaces them.</p>
+          <div class="features-grid">
+            <article class="card">
+              <div class="icon">🧠</div>
+              <h3>Diagnostic support</h3>
+              <p>Summarize symptoms, surface differentials, and highlight red flags with traceable reasoning.</p>
+            </article>
+            <article class="card">
+              <div class="icon">🗒️</div>
+              <h3>Clinical documentation</h3>
+              <p>Generate structured SOAP notes and coding suggestions directly from conversations and vitals.</p>
+            </article>
+            <article class="card">
+              <div class="icon">📥</div>
+              <h3>AI triage</h3>
+              <p>Route inbound messages and calls to the right queue with confidence scores and guardrails.</p>
+            </article>
+            <article class="card">
+              <div class="icon">💬</div>
+              <h3>Patient engagement</h3>
+              <p>Personalized follow-ups and education materials that respect reading level and language.</p>
+            </article>
+            <article class="card">
+              <div class="icon">🧪</div>
+              <h3>Research tooling</h3>
+              <p>Evaluate models on real-world cohorts with custom metrics, bias checks, and drift alerts.</p>
+            </article>
+            <article class="card">
+              <div class="icon">🔗</div>
+              <h3>Simple integrations</h3>
+              <p>Epic, Cerner, FHIR, and HL7 integration kits. Bring your own model or use ours.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section alt">
+        <div class="container">
+          <div class="split">
+            <div>
+              <h2>Integrate, deploy, and monitor — in weeks, not months</h2>
+              <ul class="checklist">
+                <li>SDKs for server, web, and mobile</li>
+                <li>Human-in-the-loop review flows</li>
+                <li>Versioning, audit logs, and rollback</li>
+                <li>Fine-tuning with private data</li>
+              </ul>
+            </div>
+            <div>
+              <div class="code-card" aria-label="API example">
+                <div class="code-card-header">Quick start</div>
+                <pre><code class="language-js">// npm i @medai/sdk
+import { MedAI } from '@medai/sdk'
+
+const client = new MedAI({ apiKey: process.env.MEDAI_KEY })
+
+const note = await client.notes.generate({
+  patientId: '12345',
+  transcription: inputAudio,
+  template: 'soap',
+})
+
+console.log(note.text)
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="security" class="section">
+        <div class="container">
+          <h2>Security and compliance by default</h2>
+          <div class="split">
+            <div>
+              <p>Healthcare-grade security is table stakes. We provide encryption in transit and at rest, access controls, audit logs, and single-tenant options. Deploy on your VPC or our managed cloud.</p>
+              <ul class="checklist">
+                <li>HIPAA-ready BAAs available</li>
+                <li>SOC 2 Type II controls</li>
+                <li>PHI minimization and redaction</li>
+                <li>Data residency controls</li>
+              </ul>
+            </div>
+            <div class="card compliance">
+              <h3>Compliance</h3>
+              <div class="badges">
+                <span class="badge">HIPAA</span>
+                <span class="badge">SOC 2</span>
+                <span class="badge">GDPR</span>
+              </div>
+              <p class="small">Independent security assessments and continuous monitoring. Contact us for reports.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container">
+          <div class="testimonial">
+            <blockquote>
+              “MedAI reduced our average charting time by 40% while improving documentation quality.”
+            </blockquote>
+            <div class="author">
+              <div class="avatar" aria-hidden="true">👩‍⚕️</div>
+              <div>
+                <div class="name">Dr. Ana Reyes</div>
+                <div class="meta">Chief Medical Information Officer, City General</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <div>
+            <h2>See MedAI in action</h2>
+            <p class="section-lead">Tell us about your clinical workflow and we'll tailor a live demo for your team.</p>
+            <form id="contact-form" class="form" novalidate>
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+                <div class="error" data-error-for="name"></div>
+              </div>
+              <div class="field">
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" required placeholder="jane@hospital.org" />
+                <div class="error" data-error-for="email"></div>
+              </div>
+              <div class="field">
+                <label for="org">Organization</label>
+                <input id="org" name="org" type="text" required placeholder="City General" />
+                <div class="error" data-error-for="org"></div>
+              </div>
+              <div class="field">
+                <label for="message">What would you like to explore?</label>
+                <textarea id="message" name="message" rows="4" required placeholder="E.g., clinical documentation for urgent care"></textarea>
+                <div class="error" data-error-for="message"></div>
+              </div>
+              <div class="checkbox">
+                <input id="agree" name="agree" type="checkbox" required />
+                <label for="agree">I agree to the <a href="#" rel="noopener">privacy policy</a>.</label>
+                <div class="error" data-error-for="agree"></div>
+              </div>
+              <button class="button button-primary" type="submit">Request a demo</button>
+              <p class="form-note small">We typically respond within one business day.</p>
+              <div id="form-status" role="status" aria-live="polite" class="form-status" hidden></div>
+            </form>
+            <noscript><p class="small">JavaScript is required to submit the form. Please email <a href="mailto:hello@medai.example">hello@medai.example</a>.</p></noscript>
+          </div>
+          <div class="card contact-info">
+            <h3>Contact</h3>
+            <ul>
+              <li>Email: <a href="mailto:hello@medai.example">hello@medai.example</a></li>
+              <li>Security: <a href="mailto:security@medai.example">security@medai.example</a></li>
+              <li>Careers: <a href="#">View openings</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#top" class="brand footer-brand">
+          <img class="brand-mark" src="/assets/logo.svg" alt="MedAI logo" width="28" height="28" />
+          <span class="brand-name">MedAI</span>
+        </a>
+        <nav aria-label="Footer">
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="legal small">
+          <span>© <span id="year"></span> MedAI, Inc.</span>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
